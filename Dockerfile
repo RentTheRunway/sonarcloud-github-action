@@ -1,13 +1,4 @@
-FROM sonarsource/sonar-scanner-cli:10.0
-
-LABEL version="2.2.0" \
-      repository="https://github.com/sonarsource/sonarcloud-github-action" \
-      homepage="https://github.com/sonarsource/sonarcloud-github-action" \
-      maintainer="SonarSource" \
-      com.github.actions.name="SonarCloud Scan" \
-      com.github.actions.description="Scan your code with SonarCloud to detect bugs, vulnerabilities and code smells in more than 25 programming languages." \
-      com.github.actions.icon="check" \
-      com.github.actions.color="green"
+FROM artifactory.rtr.cloud/docker/sonarsource/sonar-scanner-cli:10.0
 
 ARG SONAR_SCANNER_HOME=/opt/sonar-scanner
 ARG NODEJS_HOME=/opt/nodejs
