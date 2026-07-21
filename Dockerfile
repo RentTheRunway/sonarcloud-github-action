@@ -1,4 +1,4 @@
-FROM artifactory.rtr.cloud/docker/sonarsource/sonar-scanner-cli:10.0
+FROM artifactory.rtr.cloud/docker/sonarsource/sonar-scanner-cli:12.1
 
 ARG SONAR_SCANNER_HOME=/opt/sonar-scanner
 ARG NODEJS_HOME=/opt/nodejs
